@@ -1,0 +1,8 @@
+[
+    { "name": "John Doe", "usn": "1ABCD123", "hobby": "Reading" },
+    { "name": "Jane Smith", "usn": "2EFGH456", "hobby": "Gaming" },
+    { "name": "Alice Johnson", "usn": "3IJKL789", "hobby": "Painting" },
+    { "name": "Bob Brown", "usn": "4MNOP123", "hobby": "Cooking" },
+    { "name": "Eva Wilson", "usn": "5QRST678", "hobby": "Photography" }
+  ]
+  

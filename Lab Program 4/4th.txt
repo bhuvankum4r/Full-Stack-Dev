@@ -1,0 +1,50 @@
+ Initial steps
+  
+  use student1
+  
+  db.stud1col1.insert({srn:110,sname:"Rahul",degree:"BCA",sem:6,CGPA:7.9})    //Insert is 10 times, change the values 
+
+
+
+
+
+
+1. Display all the documents:
+```javascript
+db.stud1col1.find()
+```
+
+2. Display all the students in BCA:
+```javascript
+db.stud1col1.find({ degree: "BCA" })
+```
+
+3. Display all the students in ascending order:
+```javascript
+db.stud1col1.find().sort({ CGPA: 1 })
+```
+
+4. Display first 5 students:
+```javascript
+db.stud1col1.find().limit(5)
+```
+
+5. Display students 5, 6, 7:
+```javascript
+db.stud1col1.find().skip(4).limit(3)
+```
+
+6. List the degree of student "Rahul":
+```javascript
+db.stud1col1.find({ sname: "Rahul" }, { degree: 1, _id: 0 })
+```
+
+7. Display students' details of 5, 6, 7 in descending order of percentage:
+```javascript
+db.stud1col1.find().skip(4).limit(3).sort({ CGPA: -1 })
+```
+
+8. Display the number of students in BCA:
+```javascript
+db.stud1col1.find({ degree: "BCA" }).count()
+```
